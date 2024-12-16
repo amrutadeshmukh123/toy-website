@@ -1,0 +1,30 @@
+.about{
+    width: 100%;
+    height:calc(100vh - 85px);
+    background: white;
+    margin-top: 5px;
+    display: flex;
+    align-items:start;
+    justify-content: start;
+}
+.about .image{
+    width: 50%;
+    height: 100%;
+    background: url('https://blog.adobe.com/en/publish/2019/06/27/media_15617ee4b135795f44794f876642d3ee7ba3717f2.png?width=750&format=png&optimize=medium');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+.about .info{
+    width: 50%;
+    height: 100%;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+}
+.about .info h2{
+    color: #f87878;
+}

@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: url('https://sagaratechnology.com/blog/wp-content/uploads/2021/09/3747371.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container p{
+    padding: 12px 25px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: 520;
+}
+.container h2{
+    padding: 12px 25px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: 520;
+}

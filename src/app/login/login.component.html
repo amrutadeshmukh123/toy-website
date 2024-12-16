@@ -1,0 +1,34 @@
+<h3>Login Here To Explore Daily Updates !!</h3>
+<form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+   
+    <div class="input-field">
+        <input type="email" [ngClass]="{'error-field': customerForm.get('userId')?.invalid && customerForm.get('userId')?.touched}"  formControlName="userId" >
+        <label for="">Email Id :</label>
+    </div>
+    <div class="input-field">   
+        <input type="text" [ngClass]="{'error-field': customerForm.get('password')?.invalid && customerForm.get('password')?.touched}" formControlName="password">
+        <label for="">Password :</label>
+    </div>
+    <!-- <div class="input-field">
+        <select [ngClass]="{'error-field': customerForm.get('toy')?.invalid && customerForm.get('toy')?.touched}"  formControlName="toy">
+            <option value="">select your favourite toys!!</option>
+            <option *ngFor="let ut of toy" value={{ut}}>
+                {{ut}}
+            </option>
+        </select>
+        <label for="">Toys :</label>
+    </div>
+    <div class="input-field">
+        <input type="text" [ngClass]="{'error-field': customerForm.get('age')?.invalid && customerForm.get('age')?.touched}"  formControlName="age">
+        <label for="">Age :</label>
+    </div>
+    <div class="input-field">
+        <input type="text" [ngClass]="{'error-field': customerForm.get('feedback')?.invalid && customerForm.get('feedback')?.touched}"  formControlName="feedback">
+        <label for="">Your Feedback :</label>
+    </div> -->
+    <p *ngIf="isError" class="error">Login Failed ...!!</p>
+    <div class="action-field">
+        <button type="submit" [disabled]="customerForm.invalid">Submit</button>
+        <button type="reset">Cancel</button>
+    </div>
+</form>

@@ -1,0 +1,106 @@
+h3{
+    text-align: center;
+    margin-top: 50px;
+    color: lightcoral;
+}
+form{
+    margin: 40px auto;
+    width: 520px;
+    padding: 40px 30px;
+    background: linen;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.418);
+ }
+ form .input-field{
+     margin-bottom: 30px;
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     flex-direction: column-reverse;
+     /* gap: 10px; */
+ }
+ form .input-field input{
+     font-size: 14px;
+     font-weight: 550;
+ }
+ form .input-field label{
+     font-weight: 600;
+ }
+ form .input-field input,
+ form .input-field select{
+     width: 100%;
+     padding: 7px;
+     border-radius: 5px;
+     border: 2px solid black;
+     color:black;
+     margin-top: 2px;
+     outline: none;
+     transition: all ease-in 0.2s;
+     margin-bottom: 10px;
+ 
+ }
+ form .input-field:focus-within input,
+ form .input-field:focus-within select{
+     background: #a98cf5;
+     color: black;
+     border: 2px solid #6A42C2;
+ }
+ form .action-field{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     gap: 40px;
+ }
+ form .action-field button{
+     width: 60%;
+     padding: 10px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all ease-in 0.2s;
+ }
+ form .action-field button[type='submit']{
+     background: crimson;
+     color: white;
+     border: 2px solid crimson;
+     font-size: 16px;
+     font-weight: 550;
+ }
+ form .action-field button[type='submit']:active{
+     background: rgb(240, 118, 142);
+     color: white;
+     border: 2px solid rgb(247, 128, 152);
+ }
+ form .action-field button[type='submit']:disabled{
+     background: gray;
+     color: rgb(235, 221, 221);
+     border: 2px solid gray;
+     cursor: no-drop;
+ }
+ form .action-field button[type='reset']{
+     background: #6A42C2;
+     color: white;
+     border: 2px solid #6A42C2;
+     font-size: 16px !important;
+     font-weight: 550;
+ }
+ form .action-field button[type='reset']:active{
+     background: rgb(136, 199, 250);
+     color: white;
+     border: 2px solid rgb(152, 207, 252);
+ }
+ form .input-field .error-field{
+     border: 2px solid red !important;
+ }
+ form .input-field .error-field + label{
+     color: red !important;
+ }
+ form .error{
+    padding: 0px 0px;
+    font-size: 13px;
+    font-weight: 590;
+    color: red;
+ }

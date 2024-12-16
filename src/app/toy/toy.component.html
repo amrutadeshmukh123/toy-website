@@ -1,0 +1,11 @@
+<div class="container">
+    <img [src]="selectProduct.img"/>
+    <h2>{{name}}</h2>
+    <p class="para">{{selectProduct.description}} </p>
+    <h4 class="price">Rs {{selectProduct.price}}</h4>
+    <div class="btn">
+        <button>Add to Cart</button>
+        <button (click)="goBack()">Back</button>
+    </div>
+
+</div>

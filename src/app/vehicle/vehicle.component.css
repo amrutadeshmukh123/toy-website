@@ -1,0 +1,39 @@
+.toys{
+    width: 100%;
+    height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 20px;
+    background: #FFF6E3;
+    /* background: url('https://www.shutterstock.com/shutterstock/videos/1107786711/thumb/1.jpg?ip=x480');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover */
+}
+.toys .container1,
+.toys .container2,
+.toys .container3,
+.toys .container4{
+    width: 350px;
+    height: 370px;
+    border: 2px solid lightcoral;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+}
+.toys .container1 img,
+.toys .container2 img,
+.toys .container3 img,
+.toys .container4 img{
+    width: 100%;
+    height: 300px;
+}
+.toys .container1 h2,
+.toys .container2 h2,
+.toys .container3 h2,
+.toys .container4 h2{
+    text-align: center;
+    margin-top: 10px;
+}

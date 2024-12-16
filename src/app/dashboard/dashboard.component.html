@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="title">
+        <h2>Our Products</h2>
+    </div>
+    <div class="container2">
+        <div class="box" *ngFor="let toy of toyList">
+            <img [src]="toy.img" />
+            <h3>{{toy.name}}</h3>
+            <div class="footer">
+                <h4>Rs. {{toy.price}}</h4>
+                <button (click)="onProductClick(toy.name)" [disabled]="!toy.availability" >{{ toy.availability ? "Buy Now" : "Sold Out"}}</button>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
